@@ -14,10 +14,24 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.6.4",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
     "gulp-px2rem-plugin": "^0.4.0",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.12.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
