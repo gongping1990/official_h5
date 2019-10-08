@@ -128,53 +128,25 @@
 .g-text-center {
   text-align: center; }
 
-.p-contact {
+.p-agreement {
   background: #ffffff;
   margin-top: 1.0000rem; }
-  .p-contact-img {
+  .p-agreement-img {
     width: 100%;
     height: 4.0000rem; }
-  .p-contact-content {
-    padding-top: 0.2800rem; }
-  .p-contact-item {
-    margin: 0  0.8700rem; }
-    .p-contact-item .-item-title {
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-              justify-content: center; }
-      .p-contact-item .-item-title-icon-one {
-        display: inline-block;
-        margin: 0  0.1000rem;
-        width: 0.0800rem;
-        height: 0.1500rem;
-        background: -webkit-gradient(linear, left top, left bottom, from(#ffda58), to(#ff9c00));
-        background: linear-gradient(180deg, #ffda58, #ff9c00);
-        border-radius: 0.0400rem; }
-      .p-contact-item .-item-title-icon-two {
-        display: inline-block;
-        width: 0.0800rem;
-        height: 0.2700rem;
-        background: -webkit-gradient(linear, left top, left bottom, from(#ffda58), to(#ff9c00));
-        background: linear-gradient(180deg, #ffda58, #ff9c00);
-        border-radius: 0.0400rem; }
-      .p-contact-item .-item-title-text {
-        display: inline-block;
-        font-size: 0.3200rem;
-        font-weight: bold;
-        color: #333333;
-        margin: 0  0.2100rem; }
-    .p-contact-item .-item-img {
-      margin: 0.5000rem 0  0.5700rem;
-      height: 3.6100rem;
-      width: 100%;
-      border-radius: 0.2000rem; }
-    .p-contact-item .-item-text {
+  .p-agreement-content {
+    padding-top: 0.2500rem; }
+  .p-agreement-item {
+    margin: 0  0.8700rem 0.9600rem; }
+    .p-agreement-item .-item-title {
+      font-size: 0.3200rem;
+      font-weight: bold;
+      color: #fe750d; }
+    .p-agreement-item .-item-text {
+      margin-top: 0.3700rem;
       font-size: 0.2400rem;
       color: #333333;
       line-height: 0.4100rem; }
-      .p-contact-item .-item-text-span {
+      .p-agreement-item .-item-text-two {
         font-weight: 800;
         color: #333333; }
