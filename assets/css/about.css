@@ -1,0 +1,168 @@
+@import url(../css/base.css);
+.header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  background: white;
+  box-shadow: 0.0300rem 0.1000rem 0.2700rem 0px rgba(0, 0, 0, 0.1);
+  padding: 0  0.4600rem;
+  height: 1.0000rem;
+  z-index: 100; }
+  .header .logo {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center; }
+    .header .logo-left {
+      margin-right: 0.2400rem;
+      width: 0.8200rem; }
+    .header .logo-right {
+      width: 1.1300rem; }
+
+.nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 0.6400rem;
+  width: 2.9600rem;
+  background-color: #fff;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  .nav-wrap {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 1.0000rem;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 90;
+    overflow: hidden;
+    visibility: hidden; }
+    .nav-wrap.show {
+      visibility: visible; }
+      .nav-wrap.show .nav {
+        -webkit-transform: translateX(0);
+                transform: translateX(0); }
+  .nav-item {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    margin-bottom: 1.0000rem;
+    padding-left: 0.7100rem;
+    height: 0.5000rem;
+    font-size: 0.3200rem;
+    font-weight: 800;
+    color: #000; }
+    .nav-item.active {
+      color: #ff5622; }
+  .nav-icon {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../image/home/nav-icon.png");
+    display: block;
+    width: 0.4900rem;
+    height: 0.4100rem; }
+
+.kf {
+  position: fixed;
+  right: 0;
+  top: 6.7500rem;
+  width: 1.0500rem;
+  height: 1.0500rem; }
+  .kf-radio {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.0500rem;
+    height: 1.0500rem;
+    z-index: 9;
+    opacity: 0; }
+    .kf-radio:checked + .kf-qrcode {
+      display: block; }
+  .kf-icon {
+    width: 100%; }
+  .kf-qrcode {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -2.5000rem;
+    width: 2.2700rem;
+    height: 2.2700rem;
+    background-color: #fff;
+    border-radius: 0.2000rem;
+    box-shadow: 0 0 0.1000rem 2px rgba(0, 0, 0, 0.2); }
+
+.container {
+  padding-top: 1.0000rem; }
+
+.p-about {
+  background: #ffffff; }
+  .p-about-img {
+    width: 100%;
+    height: 4.0000rem; }
+  .p-about-content {
+    padding-top: 0.4000rem; }
+  .p-about-item {
+    margin: 1.1700rem 0.8800rem 0; }
+    .p-about-item .-item-title {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+              justify-content: center; }
+      .p-about-item .-item-title-icon-one {
+        display: inline-block;
+        margin: 0  0.1000rem;
+        width: 0.0800rem;
+        height: 0.1500rem;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffda58), to(#ff9c00));
+        background: linear-gradient(180deg, #ffda58, #ff9c00);
+        border-radius: 0.0400rem; }
+      .p-about-item .-item-title-icon-two {
+        display: inline-block;
+        width: 0.0800rem;
+        height: 0.2700rem;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffda58), to(#ff9c00));
+        background: linear-gradient(180deg, #ffda58, #ff9c00);
+        border-radius: 0.0400rem; }
+      .p-about-item .-item-title-text {
+        display: inline-block;
+        font-size: 0.3200rem;
+        font-weight: bold;
+        color: #333333;
+        margin: 0  0.2100rem; }
+    .p-about-item:first-child {
+      margin-top: 0; }
+    .p-about-item .-item-text {
+      margin-top: 0.3700rem;
+      font-size: 0.2400rem;
+      font-weight: 500;
+      color: #333333;
+      line-height: 0.4100rem; }
+      .p-about-item .-item-text-two {
+        font-size: 0.2100rem;
+        padding-bottom: 0.5300rem; }
+      .p-about-item .-item-text-span {
+        color: #FE750D;
+        font-size: 0.2400rem; }
