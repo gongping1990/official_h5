@@ -1,3 +1,5 @@
+@import './common.scss';
 body {
+  @include flex-center;
   color: #ccc;
 }
