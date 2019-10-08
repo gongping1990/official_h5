@@ -117,6 +117,9 @@
 .container {
   padding-top: 1.0000rem; }
 
+.g-text-center {
+  text-align: center; }
+
 .content {
   display: -webkit-box;
   display: flex;
