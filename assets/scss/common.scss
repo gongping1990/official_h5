@@ -151,3 +151,33 @@
 .g-text-center {
   text-align: center;
 }
+
+.dialog {
+  @include flex-col-center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2000;
+  visibility: hidden;
+  &.show {
+    visibility: visible;
+  }
+  &-mask {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+  }
+  &-content {
+    position: relative;
+    width: 502px;
+    height: 718px;
+    z-index: 10;
+    @include bg('dialog.png');
+  }
+}

@@ -128,6 +128,42 @@
 .g-text-center {
   text-align: center; }
 
+.dialog {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2000;
+  visibility: hidden; }
+  .dialog.show {
+    visibility: visible; }
+  .dialog-mask {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.6); }
+  .dialog-content {
+    position: relative;
+    width: 5.0200rem;
+    height: 7.1800rem;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../image/dialog.png"); }
+
 .p-mediaCoverage {
   background: #ffffff;
   margin-top: 1.0000rem; }
@@ -175,7 +211,7 @@
         font-weight: 500;
         color: #333333; }
       .p-mediaCoverage-item .-item-right-span {
-        color: #FF7800; }
+        color: #ff7800; }
       .p-mediaCoverage-item .-item-right-time {
         text-align: right;
         font-size: 0.2000rem;

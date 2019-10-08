@@ -20,7 +20,8 @@
     "gulp-postcss": "^8.0.0",
     "gulp-px2rem-plugin": "^0.4.0",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "postcss-plugin-pxtoviewport": "0.0.6"
   },
   "browserslist": {
     "production": [

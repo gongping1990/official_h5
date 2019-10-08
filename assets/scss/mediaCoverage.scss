@@ -1,5 +1,5 @@
 @import './common.scss';
-@import "../css/base.css";
+@import '../css/base.css';
 
 .p-mediaCoverage {
   background: #ffffff;
@@ -35,7 +35,6 @@
       flex-direction: column;
       height: 153px;
 
-
       &-title {
         overflow: hidden;
         white-space: nowrap;
@@ -53,14 +52,14 @@
       }
 
       &-span {
-        color: #FF7800;
+        color: #ff7800;
       }
 
       &-time {
         text-align: right;
-        font-size:20px;
-        font-weight:500;
-        color:rgba(153,153,153,1);
+        font-size: 20px;
+        font-weight: 500;
+        color: rgba(153, 153, 153, 1);
       }
     }
   }

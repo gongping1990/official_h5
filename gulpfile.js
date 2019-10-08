@@ -5,13 +5,20 @@ var sass = require('gulp-sass')
 var postcss = require('gulp-postcss')
 var autoprefixer = require('autoprefixer')
 var reload = browserSync.reload
+var pxtovw = require('postcss-plugin-pxtoviewport')
 var px2rem = require('gulp-px2rem-plugin')
 
 sass.compiler = require('node-sass')
 
 // scss编译后的css将注入到浏览器里实现更新
 function scss() {
-  var plugins = [autoprefixer()]
+  var plugins = [
+    autoprefixer()
+    // pxtovw({
+    //   toRem: true,
+    //   propList: ['.header']
+    // })
+  ]
   return gulp
     .src('assets/scss/*.scss')
     .pipe(sass())
