@@ -1,0 +1,32 @@
+@import url(../css/base.css);
+.p-about-img {
+  width: 100%;
+  height: 400px; }
+
+.p-about-content {
+  padding-top: 40px; }
+
+.p-about-item {
+  margin-top: 117px; }
+  .p-about-item .-item-title-icon {
+    width: 8px;
+    height: 27px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffda58), to(#ff9c00));
+    background: linear-gradient(180deg, #ffda58, #ff9c00);
+    border-radius: 4px; }
+    .p-about-item .-item-title-icon::before {
+      content: " ";
+      margin-right: 10px;
+      width: 8px;
+      height: 15px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#ffda58), to(#ff9c00));
+      background: linear-gradient(180deg, #ffda58, #ff9c00);
+      border-radius: 4px; }
+  .p-about-item .-item-title-text {
+    height: 31px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0 21px; }
+  .p-about-item:first-child {
+    margin-top: 0; }
