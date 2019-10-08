@@ -1,6 +1,8 @@
 @import './common.scss';
 @import "../css/base.css";
+
 .p-about {
+  background: #ffffff;
   &-img {
     width: 100%;
     height: 400px;
@@ -11,37 +13,57 @@
   }
 
   &-item {
-    margin-top: 117px;
+    margin: 117px 88px 0;
 
     .-item-title {
+      @include flex-center;
 
-      &-icon {
+      &-icon-one {
+        display: inline-block;
+        margin: 0 10px;
         width:8px;
-        height:27px;
+        height:15px;
         background:linear-gradient(180deg,rgba(255,218,88,1),rgba(255,156,0,1));
         border-radius:4px;
+      }
 
-        &::before {
-          content: " ";
-          margin-right: 10px;
-          width:8px;
-          height:15px;
-          background:linear-gradient(180deg,rgba(255,218,88,1),rgba(255,156,0,1));
-          border-radius:4px;
-        }
+      &-icon-two {
+        display: inline-block;
+        width: 8px;
+        height: 27px;
+        background: linear-gradient(180deg, rgba(255, 218, 88, 1), rgba(255, 156, 0, 1));
+        border-radius: 4px;
       }
 
       &-text {
-        height:31px;
-        font-size:32px;
-        font-weight:bold;
-        color:rgba(51,51,51,1);
+        display: inline-block;
+        font-size: 32px;
+        font-weight: bold;
+        color: rgba(51, 51, 51, 1);
         margin: 0 21px;
       }
     }
 
     &:first-child {
       margin-top: 0;
+    }
+
+    .-item-text {
+      margin-top: 37px;
+      font-size:24px;
+      font-weight:500;
+      color:rgba(51,51,51,1);
+      line-height:41px;
+
+      &-two {
+        font-size: 21px;
+        padding-bottom: 53px;
+      }
+
+      &-span {
+        color: #FE750D;
+        font-size: 24px;
+      }
     }
   }
 }
