@@ -115,6 +115,9 @@
 .container {
   padding-top: 1.0000rem; }
 
+.g-text-center {
+  text-align: center; }
+
 .p-about {
   background: #ffffff; }
   .p-about-img {
@@ -166,3 +169,9 @@
       .p-about-item .-item-text-span {
         color: #FE750D;
         font-size: 0.2400rem; }
+    .p-about-item .-item-img {
+      margin: 0.3700rem auto 0;
+      width: 5.7700rem;
+      height: 3.6100rem;
+      background: #eeeaef;
+      border-radius: 0.2000rem; }

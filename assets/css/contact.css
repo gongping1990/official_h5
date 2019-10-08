@@ -1,3 +1,4 @@
+@import url(../css/base.css);
 .header {
   display: -webkit-box;
   display: flex;
@@ -117,77 +118,52 @@
 .g-text-center {
   text-align: center; }
 
-.banner img {
-  width: 100%; }
-
-.content {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  padding-top: 0.9900rem;
-  padding-bottom: 0.7600rem; }
-  .content.com {
-    background-color: #f6f6f9; }
-  .content-img {
-    margin-bottom: 0.6900rem;
-    width: 3.3600rem; }
-  .content-title {
-    font-size: 0.4000rem;
-    font-weight: 800;
-    color: #333;
-    margin-bottom: 0.1400rem; }
-  .content-subtitle {
-    font-size: 0.2500rem;
-    color: #999;
-    font-weight: 500; }
-  .content-text {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-align: start;
-            align-items: flex-start;
-    margin-top: 0.3400rem;
-    margin-bottom: 0.3000rem; }
-    .content-text-item {
+.p-contact {
+  background: #ffffff; }
+  .p-contact-img {
+    width: 100%;
+    height: 4.0000rem; }
+  .p-contact-content {
+    padding-top: 0.2800rem; }
+  .p-contact-item {
+    margin: 0  0.8700rem; }
+    .p-contact-item .-item-title {
       display: -webkit-box;
       display: flex;
       -webkit-box-align: center;
               align-items: center;
       -webkit-box-pack: center;
-              justify-content: center;
-      margin-bottom: 0.0700rem;
+              justify-content: center; }
+      .p-contact-item .-item-title-icon-one {
+        display: inline-block;
+        margin: 0  0.1000rem;
+        width: 0.0800rem;
+        height: 0.1500rem;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffda58), to(#ff9c00));
+        background: linear-gradient(180deg, #ffda58, #ff9c00);
+        border-radius: 0.0400rem; }
+      .p-contact-item .-item-title-icon-two {
+        display: inline-block;
+        width: 0.0800rem;
+        height: 0.2700rem;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffda58), to(#ff9c00));
+        background: linear-gradient(180deg, #ffda58, #ff9c00);
+        border-radius: 0.0400rem; }
+      .p-contact-item .-item-title-text {
+        display: inline-block;
+        font-size: 0.3200rem;
+        font-weight: bold;
+        color: #333333;
+        margin: 0  0.2100rem; }
+    .p-contact-item .-item-img {
+      margin: 0.5000rem 0  0.5700rem;
+      height: 3.6100rem;
+      width: 100%;
+      border-radius: 0.2000rem; }
+    .p-contact-item .-item-text {
       font-size: 0.2400rem;
-      color: #333;
-      font-weight: 500; }
-
-.text-icon {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-image: url("../image/home/icon1.png");
-  display: block;
-  width: 0.2600rem;
-  height: 0.3000rem; }
-
-.btn {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  width: 4.0000rem;
-  height: 0.8000rem;
-  font-size: 0.2800rem;
-  color: #fff;
-  font-weight: 800;
-  background: #fe750d;
-  box-shadow: 1px 0.1200rem 0.1300rem 0px rgba(254, 117, 13, 0.3);
-  border-radius: 0.4000rem; }
+      color: #333333;
+      line-height: 0.4100rem; }
+      .p-contact-item .-item-text-span {
+        font-weight: 800;
+        color: #333333; }

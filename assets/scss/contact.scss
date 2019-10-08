@@ -1,19 +1,20 @@
 @import './common.scss';
 @import "../css/base.css";
 
-.p-about {
+.p-contact {
   background: #ffffff;
+
   &-img {
     width: 100%;
     height: 400px;
   }
 
   &-content {
-    padding-top: 40px;
+    padding-top: 28px;
   }
 
   &-item {
-    margin: 117px 88px 0;
+    margin: 0 87px;
 
     .-item-title {
       @include flex-center;
@@ -44,34 +45,22 @@
       }
     }
 
-    &:first-child {
-      margin-top: 0;
+    .-item-img {
+      margin: 50px 0 57px;
+      height:361px;
+      width: 100%;
+      border-radius:20px;
     }
 
     .-item-text {
-      margin-top: 37px;
       font-size:24px;
-      font-weight:500;
       color:rgba(51,51,51,1);
       line-height:41px;
 
-      &-two {
-        font-size: 21px;
-        padding-bottom: 53px;
-      }
-
       &-span {
-        color: #FE750D;
-        font-size: 24px;
+        font-weight:800;
+        color: #333333;
       }
-    }
-
-    .-item-img {
-      margin: 37px auto 0;
-      width:577px;
-      height:361px;
-      background:rgba(238,234,239,1);
-      border-radius:20px;
     }
   }
 }
