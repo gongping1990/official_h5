@@ -16,14 +16,9 @@ function scss() {
     .src('assets/scss/*.scss')
     .pipe(sass())
     .pipe(postcss(plugins))
+    .pipe(px2rem({ width_design: 750, pieces: 7.5, ignore_px: [1, 2] }))
     .pipe(gulp.dest('assets/css'))
     .pipe(reload({ stream: true }))
-}
-
-function pxToRem() {
-  return gulp
-    .src(['assets/css/*.css', '!assets/css/common.css', '!assets/css/base.css'])
-    .pipe(px2rem({ width_design: 750, pieces: 7.5, ignore_px: [1, 2] }))
 }
 
 function serve() {
@@ -32,7 +27,8 @@ function serve() {
   })
 
   gulp.watch('assets/scss/*.scss', scss)
-  gulp.watch('**/*.html', { events: 'change' }, reload)
+  gulp.watch('assets/js/*.js').on('change', reload)
+  gulp.watch('**/*.html').on('change', reload)
 }
 
-exports.default = series(scss, pxToRem, serve)
+exports.default = series(scss, serve)

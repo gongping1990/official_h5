@@ -15,3 +15,122 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+@mixin bg($path) {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url('../image/'+$path);
+}
+
+.header {
+  @include flex-center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 3px 10px 27px 0px rgba(0, 0, 0, 0.1);
+  padding: 0 46px;
+  height: 100px;
+  z-index: 100;
+  .logo {
+    @include flex-center;
+    &-left {
+      margin-right: 24px;
+      width: 82px;
+    }
+    &-right {
+      width: 113px;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 64px;
+  width: 296px;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: all 0.5s;
+
+  &-wrap {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 100px;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    z-index: 90;
+    overflow: hidden;
+    visibility: hidden;
+    &.show {
+      visibility: visible;
+      .nav {
+        transform: translateX(0);
+      }
+    }
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    padding-left: 71px;
+    height: 50px;
+    font-size: 32px;
+    font-weight: 800;
+    color: #000;
+    &.active {
+      color: #ff5622;
+    }
+  }
+  &-icon {
+    @include bg('home/nav-icon.png');
+    display: block;
+    width: 49px;
+    height: 41px;
+  }
+}
+
+.kf {
+  position: fixed;
+  right: 0;
+  top: 675px;
+  width: 105px;
+  height: 105px;
+  &-radio {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 105px;
+    height: 105px;
+    z-index: 9;
+    opacity: 0;
+    &:checked + .kf-qrcode {
+      display: block;
+    }
+  }
+  &-icon {
+    width: 100%;
+  }
+  &-qrcode {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 227px;
+    height: 227px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px rgba($color: #000000, $alpha: 0.2);
+  }
+}
+
+.container {
+  padding-top: 100px;
+}
