@@ -116,3 +116,74 @@
 
 .container {
   padding-top: 1.0000rem; }
+
+.content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  padding-top: 0.3000rem; }
+  .content img {
+    width: 4.4300rem; }
+
+.title {
+  position: relative;
+  margin-top: 0.3000rem;
+  margin-bottom: 0.4100rem;
+  font-size: 0.3600rem;
+  color: #333;
+  font-weight: 600; }
+  .title::before, .title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 0.7600rem;
+    height: 0.0400rem;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .title::before {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../image/composition/icon2.png");
+    left: -0.9600rem; }
+  .title::after {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../image/composition/icon1.png");
+    right: -0.9600rem; }
+
+.text {
+  margin-bottom: 0.3000rem;
+  width: 6.2300rem;
+  font-size: 0.2400rem;
+  line-height: 0.3200rem;
+  color: #666;
+  text-align: center; }
+
+.lesson {
+  margin-top: 0.5200rem;
+  padding-top: 0.3000rem;
+  background-color: #f6f6f9; }
+  .lesson img {
+    width: 6.2700rem; }
+  .lesson .btn {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    margin-top: 0.3400rem;
+    margin-bottom: 0.6000rem;
+    width: 2.9700rem;
+    height: 0.5100rem;
+    font-size: 0.2600rem;
+    color: #fff;
+    background: #ffc000;
+    box-shadow: 1px 0.1200rem 0.1300rem 0px rgba(255, 192, 0, 0.3);
+    border-radius: 0.2500rem; }

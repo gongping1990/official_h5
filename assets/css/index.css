@@ -111,11 +111,11 @@
     border-radius: 0.2000rem;
     box-shadow: 0 0 0.1000rem 2px rgba(0, 0, 0, 0.2); }
 
-.container {
-  padding-top: 1.0000rem; }
-
 .banner img {
   width: 100%; }
+
+.container {
+  padding-top: 1.0000rem; }
 
 .content {
   display: -webkit-box;

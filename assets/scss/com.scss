@@ -1,0 +1,64 @@
+@import './common.scss';
+
+.content {
+  @include flex-col-center;
+  padding-top: 30px;
+  img {
+    width: 443px;
+  }
+}
+
+.title {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 41px;
+  font-size: 36px;
+  color: #333;
+  font-weight: 600;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 76px;
+    height: 4px;
+    transform: translateY(-50%);
+  }
+  &::before {
+    @include bg('composition/icon2.png');
+    left: -96px;
+  }
+  &::after {
+    @include bg('composition/icon1.png');
+    right: -96px;
+  }
+}
+.text {
+  margin-bottom: 30px;
+  width: 623px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #666;
+  text-align: center;
+}
+
+.lesson {
+  margin-top: 52px;
+  padding-top: 30px;
+  background-color: #f6f6f9;
+  img {
+    width: 627px;
+  }
+  .btn {
+    @include flex-center;
+    margin-top: 34px;
+    margin-bottom: 60px;
+    width: 297px;
+    height: 51px;
+    font-size: 26px;
+    color: #fff;
+    background: rgba(255, 192, 0, 1);
+    box-shadow: 1px 12px 13px 0px rgba(255, 192, 0, 0.3);
+    border-radius: 25px;
+  }
+}
