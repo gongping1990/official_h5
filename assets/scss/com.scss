@@ -62,3 +62,49 @@
     border-radius: 25px;
   }
 }
+
+.jc,
+.cr {
+  padding-bottom: 33px;
+  img {
+    width: 639px;
+  }
+}
+.cr {
+  padding-bottom: 113px;
+}
+.lc {
+  padding-bottom: 80px;
+  background: url('../image/composition/img@2x.png') no-repeat right bottom;
+  background-color: #f6f6f9;
+  background-size: 186px;
+  img {
+    width: 655px;
+  }
+}
+.fk {
+  position: relative;
+  padding-bottom: 137px;
+  background-color: #f6f6f9;
+  &-icon1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 175px;
+    height: 116px;
+    @include bg('composition/img-up@2x.png');
+    background-size: 100%;
+  }
+  &-icon2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 245px;
+    height: 137px;
+    @include bg('composition/img-down@2x.png');
+    background-size: 100%;
+  }
+  img {
+    width: 652px;
+  }
+}

@@ -33,7 +33,7 @@
   box-shadow: 3px 10px 27px 0px rgba(0, 0, 0, 0.1);
   padding: 0 46px;
   height: 100px;
-  z-index: 100;
+  z-index: 1000;
   .logo {
     @include flex-center;
     &-left {
@@ -58,7 +58,13 @@
   background-color: #fff;
   transform: translateX(100%);
   transition: all 0.5s;
-
+  &-left {
+    position: absolute;
+    left: 0;
+    right: 296px;
+    top: 0;
+    bottom: 0;
+  }
   &-wrap {
     position: fixed;
     right: 0;
@@ -66,7 +72,7 @@
     top: 100px;
     bottom: 0;
     background-color: rgba($color: #000000, $alpha: 0.6);
-    z-index: 90;
+    z-index: 900;
     overflow: hidden;
     visibility: hidden;
     &.show {
@@ -103,6 +109,7 @@
   top: 675px;
   width: 105px;
   height: 105px;
+  z-index: 80;
   &-radio {
     position: absolute;
     left: 0;
@@ -139,4 +146,8 @@
 
 .container {
   padding-top: 100px;
+}
+
+.g-text-center {
+  text-align: center;
 }

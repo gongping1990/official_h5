@@ -1,1 +1,164 @@
 @import './common.scss';
+
+.content {
+  @include flex-col-center;
+  img {
+    width: 443px;
+  }
+}
+
+.title,
+.title1 {
+  position: relative;
+  margin-top: 90px;
+  margin-bottom: 41px;
+  font-size: 36px;
+  color: #333;
+  font-weight: 600;
+  span {
+    position: relative;
+    z-index: 100;
+  }
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+  }
+  &::before {
+    @include bg('poem/t1.png');
+    width: 36px;
+    height: 16px;
+    top: 3px;
+    left: -22px;
+  }
+  &::after {
+    @include bg('poem/t2.png');
+    width: 63px;
+    height: 24px;
+    bottom: 0;
+    right: -21px;
+  }
+}
+
+.title1 {
+  margin-bottom: 40px;
+  &::before {
+    @include bg('poem/y3.png');
+    width: 37px;
+    height: 37px;
+    top: -3px;
+    left: -15px;
+  }
+  &::after {
+    @include bg('poem/y3.png');
+    width: 24px;
+    height: 24px;
+    bottom: 3px;
+    right: -11px;
+  }
+}
+.text {
+  margin-bottom: 59px;
+  width: 623px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #666;
+  text-align: center;
+}
+
+.lesson {
+  margin-top: 52px;
+  padding-top: 30px;
+  background-color: #f6f6f9;
+  img {
+    width: 681px;
+  }
+  .btn {
+    @include flex-center;
+    margin-top: 48px;
+    margin-bottom: 80px;
+    width: 380px;
+    height: 83px;
+    font-size: 32px;
+    color: #fff;
+    background: rgba(255, 192, 0, 1);
+    box-shadow: 1px 12px 13px 0px rgba(255, 192, 0, 0.3);
+    border-radius: 41px;
+  }
+}
+
+.lesson {
+  ul {
+    box-sizing: border-box;
+    position: relative;
+    width: 681px;
+    height: 931px;
+    margin-top: 40px;
+    z-index: 9;
+  }
+  ul li {
+    list-style: none;
+  }
+  ul li input {
+    display: none;
+  }
+  ul li label {
+    float: left;
+    margin: 0 25px;
+    width: 173px;
+    height: 58px;
+    text-align: center;
+    line-height: 58px;
+    font-size: 28px;
+    color: #ffce15;
+    border: 1px solid rgba(255, 206, 21, 1);
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 29px;
+    transition: all 0.3s;
+  }
+  ul li input:checked + label {
+    color: #fff;
+    background-color: #ffce15;
+  }
+  ul li .content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    color: #fff;
+    transition: all 0.3s;
+    z-index: 9;
+  }
+  ul li input:checked ~ .content {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.jc,
+.cr {
+  img {
+    width: 100%;
+    max-width: 750px;
+  }
+}
+
+.lc {
+  background-color: #f9f9f9;
+  padding-bottom: 112px;
+  img {
+    width: 713px;
+  }
+}
+
+.fk {
+  background-color: #f9f9f9;
+  padding-bottom: 112px;
+  img {
+    width: 647px;
+  }
+}

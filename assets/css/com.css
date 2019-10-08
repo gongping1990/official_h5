@@ -15,7 +15,7 @@
   box-shadow: 0.0300rem 0.1000rem 0.2700rem 0px rgba(0, 0, 0, 0.1);
   padding: 0  0.4600rem;
   height: 1.0000rem;
-  z-index: 100; }
+  z-index: 1000; }
   .header .logo {
     display: -webkit-box;
     display: flex;
@@ -46,6 +46,12 @@
           transform: translateX(100%);
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
+  .nav-left {
+    position: absolute;
+    left: 0;
+    right: 2.9600rem;
+    top: 0;
+    bottom: 0; }
   .nav-wrap {
     position: fixed;
     right: 0;
@@ -53,7 +59,7 @@
     top: 1.0000rem;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 90;
+    z-index: 900;
     overflow: hidden;
     visibility: hidden; }
     .nav-wrap.show {
@@ -87,7 +93,8 @@
   right: 0;
   top: 6.7500rem;
   width: 1.0500rem;
-  height: 1.0500rem; }
+  height: 1.0500rem;
+  z-index: 80; }
   .kf-radio {
     position: absolute;
     left: 0;
@@ -116,6 +123,9 @@
 
 .container {
   padding-top: 1.0000rem; }
+
+.g-text-center {
+  text-align: center; }
 
 .content {
   display: -webkit-box;
@@ -187,3 +197,48 @@
     background: #ffc000;
     box-shadow: 1px 0.1200rem 0.1300rem 0px rgba(255, 192, 0, 0.3);
     border-radius: 0.2500rem; }
+
+.jc,
+.cr {
+  padding-bottom: 0.3300rem; }
+  .jc img,
+  .cr img {
+    width: 6.3900rem; }
+
+.cr {
+  padding-bottom: 1.1300rem; }
+
+.lc {
+  padding-bottom: 0.8000rem;
+  background: url("../image/composition/img@2x.png") no-repeat right bottom;
+  background-color: #f6f6f9;
+  background-size: 1.8600rem; }
+  .lc img {
+    width: 6.5500rem; }
+
+.fk {
+  position: relative;
+  padding-bottom: 1.3700rem;
+  background-color: #f6f6f9; }
+  .fk-icon1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.7500rem;
+    height: 1.1600rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../image/composition/img-up@2x.png");
+    background-size: 100%; }
+  .fk-icon2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 2.4500rem;
+    height: 1.3700rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../image/composition/img-down@2x.png");
+    background-size: 100%; }
+  .fk img {
+    width: 6.5200rem; }

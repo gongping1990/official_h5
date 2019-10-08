@@ -15,7 +15,7 @@
   box-shadow: 0.0300rem 0.1000rem 0.2700rem 0px rgba(0, 0, 0, 0.1);
   padding: 0  0.4600rem;
   height: 1.0000rem;
-  z-index: 100; }
+  z-index: 1000; }
   .header .logo {
     display: -webkit-box;
     display: flex;
@@ -46,6 +46,12 @@
           transform: translateX(100%);
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
+  .nav-left {
+    position: absolute;
+    left: 0;
+    right: 2.9600rem;
+    top: 0;
+    bottom: 0; }
   .nav-wrap {
     position: fixed;
     right: 0;
@@ -53,7 +59,7 @@
     top: 1.0000rem;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 90;
+    z-index: 900;
     overflow: hidden;
     visibility: hidden; }
     .nav-wrap.show {
@@ -87,7 +93,8 @@
   right: 0;
   top: 6.7500rem;
   width: 1.0500rem;
-  height: 1.0500rem; }
+  height: 1.0500rem;
+  z-index: 80; }
   .kf-radio {
     position: absolute;
     left: 0;
@@ -116,3 +123,173 @@
 
 .container {
   padding-top: 1.0000rem; }
+
+.g-text-center {
+  text-align: center; }
+
+.content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+  .content img {
+    width: 4.4300rem; }
+
+.title,
+.title1 {
+  position: relative;
+  margin-top: 0.9000rem;
+  margin-bottom: 0.4100rem;
+  font-size: 0.3600rem;
+  color: #333;
+  font-weight: 600; }
+  .title span,
+  .title1 span {
+    position: relative;
+    z-index: 100; }
+  .title::before, .title::after,
+  .title1::before,
+  .title1::after {
+    content: '';
+    position: absolute;
+    z-index: 2; }
+  .title::before,
+  .title1::before {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../image/poem/t1.png");
+    width: 0.3600rem;
+    height: 0.1600rem;
+    top: 0.0300rem;
+    left: -0.2200rem; }
+  .title::after,
+  .title1::after {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../image/poem/t2.png");
+    width: 0.6300rem;
+    height: 0.2400rem;
+    bottom: 0;
+    right: -0.2100rem; }
+
+.title1 {
+  margin-bottom: 0.4000rem; }
+  .title1::before {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../image/poem/y3.png");
+    width: 0.3700rem;
+    height: 0.3700rem;
+    top: -0.0300rem;
+    left: -0.1500rem; }
+  .title1::after {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../image/poem/y3.png");
+    width: 0.2400rem;
+    height: 0.2400rem;
+    bottom: 0.0300rem;
+    right: -0.1100rem; }
+
+.text {
+  margin-bottom: 0.5900rem;
+  width: 6.2300rem;
+  font-size: 0.2400rem;
+  line-height: 0.3200rem;
+  color: #666;
+  text-align: center; }
+
+.lesson {
+  margin-top: 0.5200rem;
+  padding-top: 0.3000rem;
+  background-color: #f6f6f9; }
+  .lesson img {
+    width: 6.8100rem; }
+  .lesson .btn {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    margin-top: 0.4800rem;
+    margin-bottom: 0.8000rem;
+    width: 3.8000rem;
+    height: 0.8300rem;
+    font-size: 0.3200rem;
+    color: #fff;
+    background: #ffc000;
+    box-shadow: 1px 0.1200rem 0.1300rem 0px rgba(255, 192, 0, 0.3);
+    border-radius: 0.4100rem; }
+
+.lesson ul {
+  box-sizing: border-box;
+  position: relative;
+  width: 6.8100rem;
+  height: 9.3100rem;
+  margin-top: 0.4000rem;
+  z-index: 9; }
+
+.lesson ul li {
+  list-style: none; }
+
+.lesson ul li input {
+  display: none; }
+
+.lesson ul li label {
+  float: left;
+  margin: 0  0.2500rem;
+  width: 1.7300rem;
+  height: 0.5800rem;
+  text-align: center;
+  line-height: 0.5800rem;
+  font-size: 0.2800rem;
+  color: #ffce15;
+  border: 1px solid #ffce15;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 0.2900rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.lesson ul li input:checked + label {
+  color: #fff;
+  background-color: #ffce15; }
+
+.lesson ul li .content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 1.0000rem;
+  width: 100%;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 9; }
+
+.lesson ul li input:checked ~ .content {
+  opacity: 1;
+  visibility: visible; }
+
+.jc img,
+.cr img {
+  width: 100%;
+  max-width: 7.5000rem; }
+
+.lc {
+  background-color: #f9f9f9;
+  padding-bottom: 1.1200rem; }
+  .lc img {
+    width: 7.1300rem; }
+
+.fk {
+  background-color: #f9f9f9;
+  padding-bottom: 1.1200rem; }
+  .fk img {
+    width: 6.4700rem; }
