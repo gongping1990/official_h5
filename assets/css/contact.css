@@ -122,7 +122,8 @@
   text-align: center; }
 
 .p-contact {
-  background: #ffffff; }
+  background: #ffffff;
+  margin-top: 1.0000rem; }
   .p-contact-img {
     width: 100%;
     height: 4.0000rem; }
