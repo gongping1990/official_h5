@@ -100,8 +100,8 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 1.0500rem;
-    height: 1.0500rem;
+    width: 1.2300rem;
+    height: 1.7600rem;
     z-index: 9;
     opacity: 0; }
     .kf-radio:checked + .kf-qrcode {
@@ -156,6 +156,12 @@
     z-index: 9;
     background-color: rgba(0, 0, 0, 0.6); }
   .dialog-content {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     position: relative;
     width: 5.0200rem;
     height: 7.1800rem;
@@ -163,6 +169,14 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url("../image/dialog.png"); }
+  .dialog-img {
+    display: none;
+    width: 4.8000rem;
+    margin: 0 auto;
+    margin-top: 2.0100rem;
+    border-radius: 0.3000rem; }
+  .dialog-img.show {
+    display: block; }
 
 .p-mediaCoverage {
   background: #ffffff;
@@ -183,9 +197,12 @@
     border-radius: 0.2000rem; }
     .p-mediaCoverage-item .-item-left {
       margin: 0.3700rem 0.3700rem 0.3700rem 0;
-      min-width: 1.5300rem;
-      height: 1.5300rem;
-      background: #ffffff; }
+      width: 1.5300rem;
+      height: 1.5300rem; }
+      .p-mediaCoverage-item .-item-left img {
+        width: 1.5300rem;
+        height: 1.5300rem;
+        border-radius: 0.1000rem; }
     .p-mediaCoverage-item .-item-right {
       display: -webkit-box;
       display: flex;
@@ -214,3 +231,10 @@
         font-size: 0.2000rem;
         font-weight: 500;
         color: #999999; }
+  .p-mediaCoverage-noData {
+    display: none;
+    margin-top: 1.0000rem;
+    text-align: center;
+    font-size: 0.2300rem; }
+    .p-mediaCoverage-noData.show {
+      display: block; }

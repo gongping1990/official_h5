@@ -48,6 +48,29 @@
       margin-top: 0;
     }
 
+    .-item-call {
+      margin-top: 37px;
+      padding: 28px 37px;
+      background:rgba(255,192,0,1);
+      border-radius:20px;
+
+      .-p-1 {
+        font-size:28px;
+        font-weight:500;
+        color:rgba(255,255,255,1);
+        line-height:41px;
+      }
+
+      .-p-2 {
+        text-align: right;
+        margin-top: 33px;
+        font-size:24px;
+        font-weight:500;
+        color:rgba(255,255,255,1);
+        line-height:41px;
+      }
+    }
+
     .-item-text {
       margin-top: 37px;
       font-size:24px;
@@ -61,7 +84,7 @@
       }
 
       &-span {
-        color: #FE750D;
+        color: #FFA108;
         font-size: 24px;
       }
     }

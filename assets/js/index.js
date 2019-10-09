@@ -5,8 +5,12 @@
   var $btn = $('.btn')
   var $dialog = $('.dialog')
   var $dialogMask = $('.dialog-mask')
+  var $dialogImg = $('.dialog-img')
 
   $btn.on('click', function() {
+    var attr = $(this).attr('data-name')
+    $dialogImg.removeClass('show')
+    $dialogImg.filter('.' + attr).addClass('show')
     $dialog.addClass('show')
   })
 

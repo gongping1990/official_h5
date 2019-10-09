@@ -99,8 +99,8 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 1.0500rem;
-    height: 1.0500rem;
+    width: 1.2300rem;
+    height: 1.7600rem;
     z-index: 9;
     opacity: 0; }
     .kf-radio:checked + .kf-qrcode {
@@ -155,6 +155,12 @@
     z-index: 9;
     background-color: rgba(0, 0, 0, 0.6); }
   .dialog-content {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     position: relative;
     width: 5.0200rem;
     height: 7.1800rem;
@@ -162,6 +168,14 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url("../image/dialog.png"); }
+  .dialog-img {
+    display: none;
+    width: 4.8000rem;
+    margin: 0 auto;
+    margin-top: 2.0100rem;
+    border-radius: 0.3000rem; }
+  .dialog-img.show {
+    display: block; }
 
 .content {
   display: -webkit-box;

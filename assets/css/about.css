@@ -100,8 +100,8 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 1.0500rem;
-    height: 1.0500rem;
+    width: 1.2300rem;
+    height: 1.7600rem;
     z-index: 9;
     opacity: 0; }
     .kf-radio:checked + .kf-qrcode {
@@ -156,6 +156,12 @@
     z-index: 9;
     background-color: rgba(0, 0, 0, 0.6); }
   .dialog-content {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     position: relative;
     width: 5.0200rem;
     height: 7.1800rem;
@@ -163,6 +169,14 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url("../image/dialog.png"); }
+  .dialog-img {
+    display: none;
+    width: 4.8000rem;
+    margin: 0 auto;
+    margin-top: 2.0100rem;
+    border-radius: 0.3000rem; }
+  .dialog-img.show {
+    display: block; }
 
 .p-about {
   background: #ffffff;
@@ -203,6 +217,23 @@
         margin: 0  0.2100rem; }
     .p-about-item:first-child {
       margin-top: 0; }
+    .p-about-item .-item-call {
+      margin-top: 0.3700rem;
+      padding: 0.2800rem 0.3700rem;
+      background: #ffc000;
+      border-radius: 0.2000rem; }
+      .p-about-item .-item-call .-p-1 {
+        font-size: 0.2800rem;
+        font-weight: 500;
+        color: white;
+        line-height: 0.4100rem; }
+      .p-about-item .-item-call .-p-2 {
+        text-align: right;
+        margin-top: 0.3300rem;
+        font-size: 0.2400rem;
+        font-weight: 500;
+        color: white;
+        line-height: 0.4100rem; }
     .p-about-item .-item-text {
       margin-top: 0.3700rem;
       font-size: 0.2400rem;
@@ -213,7 +244,7 @@
         font-size: 0.2100rem;
         padding-bottom: 0.5300rem; }
       .p-about-item .-item-text-span {
-        color: #FE750D;
+        color: #FFA108;
         font-size: 0.2400rem; }
     .p-about-item .-item-img {
       margin: 0.3700rem auto 0;

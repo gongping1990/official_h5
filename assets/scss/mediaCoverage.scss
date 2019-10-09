@@ -24,9 +24,13 @@
 
     .-item-left {
       margin: 37px 37px 37px 0;
-      min-width: 153px;
+      width: 153px;
       height: 153px;
-      background: #ffffff;
+      img {
+        width: 153px;
+        height: 153px;
+        border-radius: 10px;
+      }
     }
 
     .-item-right {
@@ -61,6 +65,16 @@
         font-weight: 500;
         color: rgba(153, 153, 153, 1);
       }
+    }
+  }
+
+  &-noData {
+    display: none;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 23px;
+    &.show {
+      display: block;
     }
   }
 }
