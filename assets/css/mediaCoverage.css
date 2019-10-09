@@ -140,8 +140,6 @@
     display: flex;
     -webkit-box-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-            justify-content: center;
     margin: 0  0.8700rem 0.3900rem;
     padding: 0  0.2700rem;
     height: 2.2700rem;

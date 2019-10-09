@@ -14,7 +14,8 @@
   }
 
   &-item {
-    @include flex-center;
+    display: flex;
+    align-items: center;
     margin: 0 87px 39px;
     padding: 0 27px;
     height: 227px;
