@@ -203,6 +203,23 @@
         margin: 0  0.2100rem; }
     .p-about-item:first-child {
       margin-top: 0; }
+    .p-about-item .-item-call {
+      margin-top: 0.3700rem;
+      padding: 0.2800rem 0.3700rem;
+      background: #ffc000;
+      border-radius: 0.2000rem; }
+      .p-about-item .-item-call .-p-1 {
+        font-size: 0.2800rem;
+        font-weight: 500;
+        color: white;
+        line-height: 0.4100rem; }
+      .p-about-item .-item-call .-p-2 {
+        text-align: right;
+        margin-top: 0.3300rem;
+        font-size: 0.2400rem;
+        font-weight: 500;
+        color: white;
+        line-height: 0.4100rem; }
     .p-about-item .-item-text {
       margin-top: 0.3700rem;
       font-size: 0.2400rem;
@@ -213,7 +230,7 @@
         font-size: 0.2100rem;
         padding-bottom: 0.5300rem; }
       .p-about-item .-item-text-span {
-        color: #FE750D;
+        color: #FFA108;
         font-size: 0.2400rem; }
     .p-about-item .-item-img {
       margin: 0.3700rem auto 0;
