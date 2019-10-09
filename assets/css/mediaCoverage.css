@@ -168,8 +168,7 @@
   background: #ffffff;
   margin-top: 1.0000rem; }
   .p-mediaCoverage-img {
-    width: 100%;
-    height: 4.0000rem; }
+    width: 100%; }
   .p-mediaCoverage-content {
     padding-top: 0.2000rem; }
   .p-mediaCoverage-item {
@@ -177,8 +176,6 @@
     display: flex;
     -webkit-box-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-            justify-content: center;
     margin: 0  0.8700rem 0.3900rem;
     padding: 0  0.2700rem;
     height: 2.2700rem;
