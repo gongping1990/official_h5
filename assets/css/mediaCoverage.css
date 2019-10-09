@@ -214,3 +214,7 @@
         font-size: 0.2000rem;
         font-weight: 500;
         color: #999999; }
+  .p-mediaCoverage-noData {
+    margin-top: 1.0000rem;
+    text-align: center;
+    font-size: 0.2300rem; }
