@@ -132,8 +132,7 @@
   background: #ffffff;
   margin-top: 1.0000rem; }
   .p-contact-img {
-    width: 100%;
-    height: 4.0000rem; }
+    width: 100%; }
   .p-contact-content {
     padding-top: 0.2800rem; }
   .p-contact-item {
@@ -168,7 +167,6 @@
         margin: 0  0.2100rem; }
     .p-contact-item .-item-img {
       margin: 0.5000rem 0  0.5700rem;
-      height: 3.6100rem;
       width: 100%;
       border-radius: 0.2000rem; }
     .p-contact-item .-item-text {
