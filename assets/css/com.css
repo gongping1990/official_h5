@@ -117,6 +117,8 @@
     background-color: #fff;
     border-radius: 0.2000rem;
     box-shadow: 0 0 0.1000rem 2px rgba(0, 0, 0, 0.2); }
+    .kf-qrcode .-img {
+      width: 100%; }
 
 .banner img {
   width: 100%; }
@@ -162,6 +164,10 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url("../image/dialog.png"); }
+    .dialog-content .-img {
+      width: 4.8000rem;
+      margin-top: 2.2000rem;
+      margin-left: 0.1000rem; }
 
 .content {
   display: -webkit-box;
