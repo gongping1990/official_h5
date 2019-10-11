@@ -135,6 +135,10 @@
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 0 10px 2px rgba($color: #000000, $alpha: 0.2);
+
+    .-img {
+      width: 100%;
+    }
   }
 }
 
@@ -180,6 +184,12 @@
     height: 718px;
     z-index: 10;
     @include bg('dialog.png');
+
+    .-img {
+      width: 480px;
+      margin-top: 220px;
+      margin-left: 10px;
+    }
   }
   &-img {
     display: none;

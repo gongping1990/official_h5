@@ -117,6 +117,8 @@
     background-color: #fff;
     border-radius: 0.2000rem;
     box-shadow: 0 0 0.1000rem 2px rgba(0, 0, 0, 0.2); }
+    .kf-qrcode .-img {
+      width: 100%; }
 
 .banner img {
   width: 100%; }
@@ -168,6 +170,10 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url("../image/dialog.png"); }
+    .dialog-content .-img {
+      width: 4.8000rem;
+      margin-top: 2.2000rem;
+      margin-left: 0.1000rem; }
   .dialog-img {
     display: none;
     width: 4.8000rem;
@@ -343,3 +349,91 @@
   padding-bottom: 1.1200rem; }
   .fk img {
     width: 6.4700rem; }
+
+.cr {
+  padding-bottom: 1.2100rem; }
+  .cr-list {
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+    justify-content: space-around; }
+  .cr-icon {
+    display: block;
+    width: 0.5600rem;
+    height: 0.5600rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../image/poem/icon-money@2x.png"); }
+  .cr-item {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: start;
+            justify-content: flex-start; }
+    .cr-item p {
+      margin-top: 0.2800rem;
+      margin-bottom: 0.2800rem;
+      font-size: 0.2800rem;
+      color: #333;
+      font-weight: 600; }
+    .cr-item span {
+      display: block;
+      font-size: 0.2200rem;
+      color: #666;
+      line-height: 0.3200rem;
+      width: 1.7500rem;
+      text-align: center; }
+
+.list.center {
+  display: -webkit-box;
+  display: flex; }
+  .list.center .item {
+    margin-bottom: 0.1600rem; }
+    .list.center .item span {
+      width: 2.7000rem; }
+  .list.center .fl {
+    margin-right: 0.1000rem; }
+
+.list.m16 .item {
+  margin-bottom: 0.1600rem; }
+
+.list .item {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 0.4100rem; }
+  .list .item-icon {
+    display: block;
+    margin-top: 0.1000rem;
+    margin-right: 0.1100rem;
+    width: 0.2000rem;
+    height: 0.2100rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../image/composition/icon-1.png"); }
+    .list .item-icon.icon2 {
+      background-image: url("../image/composition/icon-2.png"); }
+    .list .item-icon.icon3 {
+      background-image: url("../image/composition/icon-3.png"); }
+    .list .item-icon.icon4 {
+      background-image: url("../image/composition/icon-4.png"); }
+    .list .item-icon.icon5 {
+      background-image: url("../image/composition/icon-5.png"); }
+    .list .item-icon.icon6 {
+      background-image: url("../image/composition/icon-6.png"); }
+  .list .item-text p {
+    font-size: 0.2400rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 0.1600rem; }
+  .list .item-text span {
+    display: block;
+    width: 5.9000rem;
+    font-size: 0.2200rem;
+    line-height: 0.3900rem;
+    color: #666; }

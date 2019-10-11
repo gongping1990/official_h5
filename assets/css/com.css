@@ -117,6 +117,8 @@
     background-color: #fff;
     border-radius: 0.2000rem;
     box-shadow: 0 0 0.1000rem 2px rgba(0, 0, 0, 0.2); }
+    .kf-qrcode .-img {
+      width: 100%; }
 
 .banner img {
   width: 100%; }
@@ -168,6 +170,10 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url("../image/dialog.png"); }
+    .dialog-content .-img {
+      width: 4.8000rem;
+      margin-top: 2.2000rem;
+      margin-left: 0.1000rem; }
   .dialog-img {
     display: none;
     width: 4.8000rem;
@@ -176,6 +182,27 @@
     border-radius: 0.3000rem; }
   .dialog-img.show {
     display: block; }
+
+.banner {
+  position: relative; }
+  .banner .btn {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    position: absolute;
+    right: 1.1000rem;
+    bottom: 0.7300rem;
+    width: 2.5300rem;
+    height: 0.6400rem;
+    background: #ff7a32;
+    box-shadow: 0px 0.0500rem 0.0500rem 1px rgba(169, 223, 235, 0.4);
+    border-radius: 0.3200rem;
+    font-size: 0.2700rem;
+    color: #fff;
+    font-weight: 600; }
 
 .content {
   display: -webkit-box;
@@ -292,3 +319,51 @@
     background-size: 100%; }
   .fk img {
     width: 6.5200rem; }
+
+.list.center {
+  display: -webkit-box;
+  display: flex; }
+  .list.center .item {
+    margin-bottom: 0.1600rem; }
+    .list.center .item span {
+      width: 2.7000rem; }
+  .list.center .fl {
+    margin-right: 0.1000rem; }
+
+.list.m16 .item {
+  margin-bottom: 0.1600rem; }
+
+.list .item {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 0.4100rem; }
+  .list .item-icon {
+    display: block;
+    margin-top: 0.1000rem;
+    margin-right: 0.1100rem;
+    width: 0.2000rem;
+    height: 0.2100rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../image/composition/icon-1.png"); }
+    .list .item-icon.icon2 {
+      background-image: url("../image/composition/icon-2.png"); }
+    .list .item-icon.icon3 {
+      background-image: url("../image/composition/icon-3.png"); }
+    .list .item-icon.icon4 {
+      background-image: url("../image/composition/icon-4.png"); }
+    .list .item-icon.icon5 {
+      background-image: url("../image/composition/icon-5.png"); }
+    .list .item-icon.icon6 {
+      background-image: url("../image/composition/icon-6.png"); }
+  .list .item-text p {
+    font-size: 0.2400rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 0.1600rem; }
+  .list .item-text span {
+    display: block;
+    width: 5.9000rem;
+    font-size: 0.2200rem;
+    line-height: 0.3900rem;
+    color: #666; }
