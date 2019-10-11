@@ -1,5 +1,21 @@
 @import './common.scss';
-
+.banner {
+  position: relative;
+  .btn {
+    @include flex-center;
+    position: absolute;
+    right: 110px;
+    bottom: 73px;
+    width: 253px;
+    height: 64px;
+    background: rgba(255, 122, 50, 1);
+    box-shadow: 0px 5px 5px 1px rgba(169, 223, 235, 0.4);
+    border-radius: 32px;
+    font-size: 27px;
+    color: #fff;
+    font-weight: 600;
+  }
+}
 .content {
   @include flex-col-center;
   padding-top: 30px;
@@ -71,7 +87,37 @@
   }
 }
 .cr {
-  padding-bottom: 113px;
+  padding-bottom: 121px;
+  &-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  &-icon {
+    display: block;
+    width: 56px;
+    height: 56px;
+    @include bg('poem/icon-money@2x.png');
+  }
+  &-item {
+    @include flex-col-center;
+    justify-content: flex-start;
+    p {
+      margin-top: 28px;
+      margin-bottom: 28px;
+      font-size: 28px;
+      color: #333;
+      font-weight: 600;
+    }
+    span {
+      display: block;
+      font-size: 22px;
+      color: #666;
+      line-height: 32px;
+      width: 175px;
+      text-align: center;
+    }
+  }
 }
 .lc {
   padding-bottom: 80px;
@@ -106,5 +152,67 @@
   }
   img {
     width: 652px;
+  }
+}
+
+.list {
+  &.center {
+    display: flex;
+    .item {
+      margin-bottom: 16px;
+      span {
+        width: 270px;
+      }
+    }
+    .fl {
+      margin-right: 10px;
+    }
+  }
+  &.m16 {
+    .item {
+      margin-bottom: 16px;
+    }
+  }
+  .item {
+    display: flex;
+    margin-bottom: 41px;
+    &-icon {
+      display: block;
+      margin-top: 10px;
+      margin-right: 11px;
+      width: 20px;
+      height: 21px;
+      @include bg('composition/icon-1.png');
+      &.icon2 {
+        background-image: url('../image/composition/icon-2.png');
+      }
+      &.icon3 {
+        background-image: url('../image/composition/icon-3.png');
+      }
+      &.icon4 {
+        background-image: url('../image/composition/icon-4.png');
+      }
+      &.icon5 {
+        background-image: url('../image/composition/icon-5.png');
+      }
+      &.icon6 {
+        background-image: url('../image/composition/icon-6.png');
+      }
+    }
+    &-text {
+      p {
+        font-size: 24px;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
+      span {
+        display: block;
+        width: 590px;
+        font-size: 22px;
+        line-height: 39px;
+        color: #666;
+      }
+    }
   }
 }

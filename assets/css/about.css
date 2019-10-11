@@ -118,6 +118,8 @@
     background-color: #fff;
     border-radius: 0.2000rem;
     box-shadow: 0 0 0.1000rem 2px rgba(0, 0, 0, 0.2); }
+    .kf-qrcode .-img {
+      width: 100%; }
 
 .banner img {
   width: 100%; }
@@ -169,6 +171,10 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url("../image/dialog.png"); }
+    .dialog-content .-img {
+      width: 4.8000rem;
+      margin-top: 2.2000rem;
+      margin-left: 0.1000rem; }
   .dialog-img {
     display: none;
     width: 4.8000rem;
@@ -217,23 +223,6 @@
         margin: 0  0.2100rem; }
     .p-about-item:first-child {
       margin-top: 0; }
-    .p-about-item .-item-call {
-      margin-top: 0.3700rem;
-      padding: 0.2800rem 0.3700rem;
-      background: #ffc000;
-      border-radius: 0.2000rem; }
-      .p-about-item .-item-call .-p-1 {
-        font-size: 0.2800rem;
-        font-weight: 500;
-        color: white;
-        line-height: 0.4100rem; }
-      .p-about-item .-item-call .-p-2 {
-        text-align: right;
-        margin-top: 0.3300rem;
-        font-size: 0.2400rem;
-        font-weight: 500;
-        color: white;
-        line-height: 0.4100rem; }
     .p-about-item .-item-text {
       margin-top: 0.3700rem;
       font-size: 0.2400rem;

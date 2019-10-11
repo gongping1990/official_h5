@@ -1,8 +1,8 @@
 ;(function(window, $) {
+  var $btn = $('.btn')
   var $navBtn = $('.nav-icon')
   var $navLeft = $('.nav-left')
   var $navWrap = $('.nav-wrap')
-  var $btn = $('.btn')
   var $dialog = $('.dialog')
   var $dialogMask = $('.dialog-mask')
   var $dialogImg = $('.dialog-img')
