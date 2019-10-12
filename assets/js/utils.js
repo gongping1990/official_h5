@@ -16,6 +16,6 @@ function isMobile() {
   return false
 }
 
-if (!isMobile()) {
-  window.location.replace(pcUrl + location.pathname)
-}
+// if (!isMobile()) {
+//   window.location.replace(pcUrl + location.pathname)
+// }
