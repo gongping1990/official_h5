@@ -66,15 +66,15 @@
       if (list.length) {
         list.forEach(e => {
           var html =
-            '<div class="p-mediaCoverage-item"><div class="-item-left"><img src="' +
+            '<a href="' +
+            e.href +
+            '" class="p-mediaCoverage-item"><div class="-item-left"><img src="' +
             e.img +
-            '"></div><div class="-item-right"><div class="-item-right-title">' +
+            '"></div><div class="-item-right"><div class="-item-info"><div class="-item-right-title">' +
             e.title +
             '</div><div class="-item-right-text">' +
             (e.describe || '') +
-            '<a href="' +
-            e.href +
-            '" target="_blank" class="-item-right-span">详情></a></div><div class="-item-right-time">2019年08月20日</div></div></div>'
+            '</div></div><div class="-item-right-time">2019年08月20日</div></div></a>'
           $content.append(html)
         })
       } else {
