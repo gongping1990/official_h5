@@ -22,6 +22,17 @@
   background-image: url('../image/'+$path);
 }
 
+@mixin line-clamp($line: 2) {
+  ext-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  line-clamp: $line;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
 .header {
   @include flex-center;
   position: fixed;

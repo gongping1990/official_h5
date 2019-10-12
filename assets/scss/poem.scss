@@ -220,25 +220,25 @@
     margin-bottom: 41px;
     &-icon {
       display: block;
-      margin-top: 10px;
+      margin-top: 8px;
       margin-right: 11px;
       width: 20px;
       height: 21px;
-      @include bg('composition/icon-1.png');
+      @include bg('poem/icon-1.png');
       &.icon2 {
-        background-image: url('../image/composition/icon-2.png');
+        background-image: url('../image/poem/icon-2.png');
       }
       &.icon3 {
-        background-image: url('../image/composition/icon-3.png');
+        background-image: url('../image/poem/icon-3.png');
       }
       &.icon4 {
-        background-image: url('../image/composition/icon-4.png');
+        background-image: url('../image/poem/icon-4.png');
       }
       &.icon5 {
-        background-image: url('../image/composition/icon-5.png');
+        background-image: url('../image/poem/icon-5.png');
       }
       &.icon6 {
-        background-image: url('../image/composition/icon-6.png');
+        background-image: url('../image/poem/icon-6.png');
       }
     }
     &-text {

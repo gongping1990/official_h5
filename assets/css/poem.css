@@ -409,23 +409,23 @@
   margin-bottom: 0.4100rem; }
   .list .item-icon {
     display: block;
-    margin-top: 0.1000rem;
+    margin-top: 0.0800rem;
     margin-right: 0.1100rem;
     width: 0.2000rem;
     height: 0.2100rem;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-image: url("../image/composition/icon-1.png"); }
+    background-image: url("../image/poem/icon-1.png"); }
     .list .item-icon.icon2 {
-      background-image: url("../image/composition/icon-2.png"); }
+      background-image: url("../image/poem/icon-2.png"); }
     .list .item-icon.icon3 {
-      background-image: url("../image/composition/icon-3.png"); }
+      background-image: url("../image/poem/icon-3.png"); }
     .list .item-icon.icon4 {
-      background-image: url("../image/composition/icon-4.png"); }
+      background-image: url("../image/poem/icon-4.png"); }
     .list .item-icon.icon5 {
-      background-image: url("../image/composition/icon-5.png"); }
+      background-image: url("../image/poem/icon-5.png"); }
     .list .item-icon.icon6 {
-      background-image: url("../image/composition/icon-6.png"); }
+      background-image: url("../image/poem/icon-6.png"); }
   .list .item-text p {
     font-size: 0.2400rem;
     color: #333;
