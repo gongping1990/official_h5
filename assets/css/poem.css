@@ -164,24 +164,49 @@
     -webkit-box-pack: center;
             justify-content: center;
     position: relative;
-    width: 5.0200rem;
-    height: 7.1800rem;
-    z-index: 10;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-image: url("../image/dialog.png"); }
-    .dialog-content .-img {
-      width: 4.8000rem;
-      margin-top: 2.2000rem;
-      margin-left: 0.1000rem; }
+    width: 5.2000rem;
+    height: 5.0700rem;
+    z-index: 10; }
+    .dialog-content.poem {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: url("../image/poem-bg.png"); }
+      .dialog-content.poem .dialog-img {
+        margin-top: 1.3000rem; }
+    .dialog-content.composition {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: url("../image/composition-bg.png"); }
+      .dialog-content.composition .dialog-img {
+        margin-top: 1.1000rem;
+        margin-left: 2.2800rem; }
   .dialog-img {
     display: none;
-    width: 4.8000rem;
-    margin: 0 auto;
-    margin-top: 2.0100rem;
+    width: 1.8000rem;
     border-radius: 0.3000rem; }
   .dialog-img.show {
     display: block; }
+
+.banner {
+  position: relative; }
+  .banner .btn {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    position: absolute;
+    left: 0.5000rem;
+    bottom: 1.1100rem;
+    width: 2.5300rem;
+    height: 0.6400rem;
+    background: #ff7a32;
+    box-shadow: 0px 0.0500rem 0.0500rem 1px rgba(169, 223, 235, 0.4);
+    border-radius: 0.3200rem;
+    font-size: 0.2700rem;
+    color: #fff;
+    font-weight: 600; }
 
 .content {
   display: -webkit-box;

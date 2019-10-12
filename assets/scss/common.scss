@@ -191,22 +191,26 @@
   &-content {
     @include flex-center;
     position: relative;
-    width: 502px;
-    height: 718px;
+    width: 520px;
+    height: 507px;
     z-index: 10;
-    @include bg('dialog.png');
-
-    .-img {
-      width: 480px;
-      margin-top: 220px;
-      margin-left: 10px;
+    &.poem {
+      @include bg('poem-bg.png');
+      .dialog-img {
+        margin-top: 130px;
+      }
+    }
+    &.composition {
+      @include bg('composition-bg.png');
+      .dialog-img {
+        margin-top: 110px;
+        margin-left: 228px;
+      }
     }
   }
   &-img {
     display: none;
-    width: 480px;
-    margin: 0 auto;
-    margin-top: 201px;
+    width: 180px;
     border-radius: 30px;
   }
   &-img.show {

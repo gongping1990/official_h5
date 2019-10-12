@@ -164,21 +164,25 @@
     -webkit-box-pack: center;
             justify-content: center;
     position: relative;
-    width: 5.0200rem;
-    height: 7.1800rem;
-    z-index: 10;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-image: url("../image/dialog.png"); }
-    .dialog-content .-img {
-      width: 4.8000rem;
-      margin-top: 2.2000rem;
-      margin-left: 0.1000rem; }
+    width: 5.2000rem;
+    height: 5.0700rem;
+    z-index: 10; }
+    .dialog-content.poem {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: url("../image/poem-bg.png"); }
+      .dialog-content.poem .dialog-img {
+        margin-top: 1.3000rem; }
+    .dialog-content.composition {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: url("../image/composition-bg.png"); }
+      .dialog-content.composition .dialog-img {
+        margin-top: 1.1000rem;
+        margin-left: 2.2800rem; }
   .dialog-img {
     display: none;
-    width: 4.8000rem;
-    margin: 0 auto;
-    margin-top: 2.0100rem;
+    width: 1.8000rem;
     border-radius: 0.3000rem; }
   .dialog-img.show {
     display: block; }

@@ -5,12 +5,16 @@
   var $navWrap = $('.nav-wrap')
   var $dialog = $('.dialog')
   var $dialogMask = $('.dialog-mask')
+  var $dialogContent = $('.dialog-content')
   var $dialogImg = $('.dialog-img')
 
   $btn.on('click', function() {
     var attr = $(this).attr('data-name')
     $dialogImg.removeClass('show')
     $dialogImg.filter('.' + attr).addClass('show')
+    $dialogContent.removeClass('poem')
+    $dialogContent.removeClass('composition')
+    $dialogContent.addClass(attr)
     $dialog.addClass('show')
   })
 

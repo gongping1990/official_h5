@@ -79,7 +79,9 @@
             e.title +
             '</div><div class="-item-right-text">' +
             (e.describe || '') +
-            '</div></div><div class="-item-right-time">2019年08月20日</div></div></a>'
+            '</div></div><div class="-item-right-time">' +
+            e.createTime +
+            '</div></div></a>'
           $content.append(html)
         })
       } else {
