@@ -120,6 +120,45 @@
     .kf-qrcode .-img {
       width: 100%; }
 
+.windowText {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99; }
+  .windowText-wrap {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: 1.6700rem;
+    background: rgba(18, 16, 16, 0.85); }
+  .windowText-img {
+    position: relative;
+    top: -0.1800rem;
+    width: 2.2300rem;
+    height: 2.0900rem; }
+  .windowText-text {
+    width: 2.5300rem;
+    font-size: 0.3100rem;
+    font-weight: bold;
+    color: white; }
+  .windowText-btn {
+    text-align: center;
+    margin-right: 0.3300rem !important;
+    width: 2.0000rem !important;
+    height: 0.7300rem !important;
+    background: #f73434 !important;
+    box-shadow: 0px -0.0700rem 1px 0px rgba(176, 17, 17, 0.41) !important;
+    border-radius: 0.3700rem !important;
+    font-size: 0.3100rem !important;
+    line-height: 0.7300rem !important;
+    font-weight: bold;
+    color: white; }
+
 .banner img {
   width: 100%; }
 
