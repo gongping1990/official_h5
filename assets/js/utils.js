@@ -1,4 +1,4 @@
-var pcUrl = 'http://www.lexiaoshi.cn'
+var pcUrl = 'http://ww.lexiaoshi.cn'
 function isMobile() {
   if (
     navigator.userAgent.match(/Android/i) ||
@@ -15,6 +15,6 @@ function isMobile() {
   return false
 }
 
-// if (!isMobile()) {
-//   window.location.replace(pcUrl + window.location.pathname)
-// }
+if (!isMobile()) {
+  window.location.replace(pcUrl + window.location.pathname)
+}
