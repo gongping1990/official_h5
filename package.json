@@ -15,7 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.6.4",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-px2rem-plugin": "^0.4.0",
